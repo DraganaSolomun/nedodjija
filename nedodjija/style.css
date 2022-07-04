@@ -1,0 +1,422 @@
+/*
+Theme Name: Nedodjija
+Theme URI: https://skolavebdizajna.com
+Author: Slobodan Miric & Skola veb dizajna ekipa
+Author URI: https://slobodanmiric.in.rs
+Description: WordPress Bootstrap theme
+Version: 1.0
+*/
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Raleway:wght@100;200;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+:root {
+    
+    --white: #fff;
+    --black: #181818;
+    --lightGray: #f9f9f9;
+    --gray: #242424;
+    --headings: 'EB Garamond', cursive;
+    --bodyFont: 'Raleway', sans-serif;
+    --fontSize: 16px;
+    --textShadow: 0 0 3px var(--black);
+    --transition: .3s ease-in-out;
+    --plava:rgb(5,50,115);
+    --novaZelena:#365C4F;
+    --novaNarandzasta:#B88037;
+    --zlatna:#FECF21;
+    --rozaBlush:#C7A68F;
+    --darkGreen: rgb(88, 98, 81);
+    --lightGreen: rgb(164,174,141);
+    --josSvetlijaZelena:#9FA08D;
+    --bez:#E8DECD;
+    --eggshel:rgb(238,237,233);
+}
+/***********************
+basic styles
+***********************/
+body {
+    font-family: var(--bodyFont);
+    line-height: 1.6;
+    font-size: var(--fontSize);
+    color: #3f3f3f;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--headings);
+}
+h2 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+.py {
+    padding: 100px 0;
+}
+.py2 {
+    padding: 200px 0;
+}
+.pt {
+    padding: 100px 0 0 0;
+}
+.pb {
+    padding: 0 0 100px 0;
+}
+a {
+    transition: var(--transition);
+}
+.container{
+    max-width: 1200px!important;
+}
+/***********************
+main nav
+***********************/
+nav.bg-light {
+background: transparent!important;
+}
+nav .navbar-brand {
+    font-family: var(--headings);
+    letter-spacing: 1px;
+}
+.navbar-brand img{
+    width: 100px;
+}
+.navbarNav{
+    backdrop-filter: blur(10px);
+}
+nav .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--eggshel)!important;
+    font-size: 1rem;
+   
+}
+nav .nav-link:hover{
+    color: var(--rozaBlush)!important;
+}
+nav.bg-light.sticky {
+    background:rgba(54, 92, 79, .9) !important;
+    padding: 0;
+    transition: .5s ease;
+}
+/***********************
+slider
+***********************/
+#carouselExampleCaptions p {
+    font-size: 2rem;
+    text-shadow: var(--textShadow);
+
+}
+
+
+.uvod{
+    background: var(--novaZelena);
+    color: var(--bez);
+    font-size: 1.1rem;
+    height: 90vh;
+}
+
+
+/***********************
+video
+***********************/
+.video {
+background-attachment: fixed;
+   background-color: var(--lightGreen);
+    box-shadow: inset 0px 10px 15px 1px rgba(0,0,0,0.53);
+}
+.video h2{
+    color: var(--darkGreen);
+}
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.53);
+}
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+
+ 
+/***********************
+novosti
+***********************/
+.novosti {
+  position: relative;
+    /* background: linear-gradient(115deg,var(--darkGreen),var(--lightGreen), var(--yellow),var(--orange), var(--orangeRed)); */
+ background: var(--eggshel);
+}
+.novosti h2{
+    color: var(--darkGreen);
+}
+.novosti img {
+    width: 100%;
+    height:50vh;
+    object-fit: cover;
+}
+.featured_img{
+    height: 50vh;
+}
+.background{
+    background-color: var(--rozaBlush);
+}
+
+
+/***********************
+rezervacija
+***********************/
+.rezervacija {
+    padding: 250px 0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 10px 15px 1px rgba(0,0,0,0.53);
+}
+.rezervacija h2{
+    color: var(--rozaBlush);
+}
+
+/***********************
+mapa
+***********************/
+.map{
+    height: 450px;
+}
+/***********************
+footer
+***********************/
+footer {
+    background: var(--novaZelena);
+    position: relative;
+    box-shadow:10px -15px 15px 1px rgb(0 0 0 / 53%);
+}
+
+
+footer a {
+    color: var(--lightGreen);
+    font-size: 2rem;
+    margin: 0 20px;
+}
+footer a:hover {
+    color: var(--lightGreen);
+    opacity: 0.3;
+}
+/***********************
+botom Bar
+***********************/
+.bottomBar {
+    padding: 20px 0;
+    background: var(--novaZelena);
+}
+.bottomBar a {
+    color: var(--yellow);
+}
+.bottomBar a:hover {
+    color: var(--white);
+}
+.bottomBar p {
+    margin-bottom: 0;
+}
+
+.mobileHeader{
+    display: none;
+}
+
+
+/* novosti arhiva */
+.blog_nav{
+    background-color: rgba(54, 92, 79, .9)!important;
+}
+.header_blog img{
+width: 100%;
+height: 60vh;
+object-fit: cover;
+}
+
+.blog_post_flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.blog_post_flex aside{
+    align-self: flex-start;
+    flex: 0 0 25%;
+}
+
+.card_flex{
+    flex: 0 0 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog_post_flex .card_flex .card{
+    flex: 0 0 48%;
+    margin-bottom: 30px;
+}
+aside ul{
+list-style: none;
+padding-inline-start: 0;
+}
+aside a{
+    text-decoration: none;
+    color: #181818;
+    font-weight: 600;
+
+}
+
+aside a:hover{
+    color: var(--rozaBlush);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+/* single post page */
+
+.sigle_post {
+    background-color: var(--eggshel);
+    padding: 40px 20px;
+    margin-top: -17%;
+    margin-bottom: 30px;
+    flex: 0 0 70%;
+}
+
+.admin{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--rozaBlush);
+}
+
+/* responsive */
+@media (max-width:767px) {
+    p,.lead{
+        font-size: .9rem;
+    }
+    
+    .navbar-brand img{
+        width: 100px;
+    }
+
+    .navbar-nav .nav-link {
+     
+        text-align: center;
+    }
+
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    .py {
+        padding: 50px 0 0 0;
+    }
+    .py2 {
+        padding: 50px 0;
+    }
+    .pt {
+        padding: 50px 0 0 0;
+    }
+    .pb {
+        padding: 0 0 50px 0;
+    }
+/* .mobileHeader{
+    display: block;
+    height: 30vh;
+}
+.mobileHeader img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+.carousel, .carousel-control-prev,.carousel-control-next{
+        display: none;
+    } */
+
+    footer h3{
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+    footer .social i{
+        font-size: 1.8rem;
+    }
+
+.uvod{
+    height: 65vh;
+}
+    
+.blog_nav .navbar-toggler{
+        color: rgba(255,255,255,.5);
+        border-color: rgba(255,255,255,.1);
+    }
+    .blog_post_flex {
+       
+        justify-content: center;
+       
+    }
+  
+    .blog_slika img{
+        height: 45vh;
+    }
+    .sigle_post{
+        margin-top: -50%;
+    }
+    aside{
+        text-align: center;
+    }
+    .sigle_post, aside{
+        flex: 0 0 100%!important;
+    }
+    .blog_post_flex .card_flex .card, .novosti .card {
+        flex: 0 0 95%;
+        margin-bottom: 30px;
+    }
+    .novosti h2{
+        margin-left: 10%;
+    }
+    .card_flex {
+        flex: 0 0 90%;
+    }
+
+}
+
+@media screen {
+    
+}
+
+@media (max-width:530px) {
+    .uvod{
+        height: 100vh;
+    }
+    .col-3 {
+       
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
+
+@media (max-width:1000px){
+    .mobileHeader{
+        display: block;
+        height: 30vh;
+    }
+    .mobileHeader img{
+        width: 100%;
+        height: 30vh;
+        object-fit: cover;
+    }
+    .carousel, .carousel-control-prev,.carousel-control-next{
+            display: none;
+        }
+}
+
+.gallery{
+ margin-top: 5%;
+}
